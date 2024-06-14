@@ -17,13 +17,7 @@ const { checkOverload } = require("./helpers/check.connect");
 checkOverload();
 
 // init routes
-
-app.get("/", (req, res) => {
-  return res.status(200).json({
-    message: "Welcome to the API",
-    metadata: "Hello nè".repeat(10),
-  });
-});
+app.use("", require("./routes"));
 
 // handle error
 

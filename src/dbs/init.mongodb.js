@@ -21,7 +21,6 @@ class Database {
       )
       .then(() => {
         console.log("MongoDB connected");
-        countConnect();
       });
   }
 
